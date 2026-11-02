@@ -6,7 +6,9 @@
 
 **Tools:** SQL (DuckDB) for cleaning and analysis, Python to run the pipeline, Tableau Public for the dashboard.
 
-**Dashboard:** *coming soon*
+**Dashboard:** [View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/louise.rosenbaum/viz/minneapolis-permits/MinneapolisConstructionPermits)
+
+[![Minneapolis construction permits dashboard](images/dashboard.png)](https://public.tableau.com/app/profile/louise.rosenbaum/viz/minneapolis-permits/MinneapolisConstructionPermits)
 
 ---
 
@@ -16,7 +18,7 @@
 
 2. **New housing has dropped sharply.** Permitted new dwelling units peaked at 4,837 in 2022 and fell to **522 in 2025**, down 89%. Total permitted value in 2025 ($1.17B) was the lowest of the nine years.
 
-3. **A small group of firms builds most commercial projects.** Of 4,712 contractors, **14 account for half** of commercial permit value. Mortenson leads with 9.6%, followed by Frana, Kraus-Anderson, Gardner Builders, and McGough.
+3. **A small group of firms builds most commercial projects.** Of 4,711 contractors, **13 account for half** of commercial permit value. Mortenson leads with 10.3%, followed by Frana, Kraus-Anderson, Gardner Builders, and McGough.
 
 4. **Most big-ticket commercial permits are housing.** Of 225 commercial projects worth $10M or more, 128 are apartment or condo buildings, totaling $4.2B. That is more than 2.5 times offices ($0.8B) and hospitals ($0.7B) combined.
 
@@ -31,7 +33,7 @@ For a construction technology company selling into the Twin Cities, the commerci
 | Issue | Fix |
 |---|---|
 | Permits duplicated once per parcel (up to 510x) | One row per permit number |
-| Contractor names in free text (Mortenson appears 17 ways) | Removed punctuation and legal suffixes, then mapped known firms to one name |
+| Contractor names in free text (Mortenson appears 18 ways, including the typo "Mortentson") | Removed punctuation and legal suffixes, then mapped known firms to one name |
 | Dates stored as text | Cast to timestamps |
 | No building-use field (hospital, apartments, office) | Classified large projects from the permit description with ordered keyword rules; unclear ones stay "Other / unspecified" |
 | Two permits with placeholder (0, 0) coordinates | Excluded from the project map |

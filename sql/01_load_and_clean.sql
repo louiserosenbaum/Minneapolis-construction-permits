@@ -43,7 +43,7 @@ WITH typed AS (
 SELECT
     typed.*,
     CASE
-        WHEN base_name LIKE '%MORTENSON%'                       THEN 'MORTENSON'
+        WHEN base_name LIKE '%MORTENSON%' OR base_name LIKE '%MORTENTSON%' THEN 'MORTENSON'
         WHEN base_name LIKE '%MCGOUGH%'                         THEN 'MCGOUGH'
         WHEN REPLACE(base_name, ' ', '') LIKE '%KRAUSANDERSON%' THEN 'KRAUS-ANDERSON'
         WHEN base_name LIKE 'RYAN COMPANIES%'                   THEN 'RYAN COMPANIES'
