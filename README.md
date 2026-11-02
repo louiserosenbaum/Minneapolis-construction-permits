@@ -6,9 +6,9 @@
 
 **Tools:** SQL (DuckDB) for cleaning and analysis, Python to run the pipeline, Tableau Public for the dashboard.
 
-**Dashboard:** [View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/louise.rosenbaum/viz/minneapolis-permits/MinneapolisConstructionPermits)
+**Dashboard:** [View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/louise.rosenbaum/viz/MinneapolisConstructionPermits/MinneapolisConstructionPermits)
 
-[![Minneapolis construction permits dashboard](images/dashboard.png)](https://public.tableau.com/app/profile/louise.rosenbaum/viz/minneapolis-permits/MinneapolisConstructionPermits)
+[![Minneapolis construction permits dashboard](images/dashboard.png)](https://public.tableau.com/app/profile/louise.rosenbaum/viz/MinneapolisConstructionPermits/MinneapolisConstructionPermits)
 
 ---
 
