@@ -13,8 +13,8 @@ for sql_file in sorted(Path("sql").glob("*.sql")):
     con.execute(sql_file.read_text())
 
 print("\nData quality check")
-print(con.execute("SELECT * FROM dq_summary").fetchdf().to_string(index=False))
-print(con.execute("SELECT * FROM dq_value_by_year").fetchdf().to_string(index=False))
+con.sql("SELECT * FROM dq_summary").show()
+con.sql("SELECT * FROM dq_value_by_year").show()
 
 Path("output").mkdir(exist_ok=True)
 for table in ["dq_value_by_year", "yearly_by_type", "neighborhood_year",
