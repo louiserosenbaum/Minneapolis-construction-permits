@@ -7,7 +7,7 @@
 --      raw rows overstates construction value by up to 4x in some years.
 --   2. Text dates in "YYYY/MM/DD HH:MM:SS+00" format, cast to timestamps.
 --   3. Contractor names are free text. The same firm appears under many spellings
---      (Mortenson shows up 17 ways). Names are normalized by removing punctuation and
+--      (Mortenson shows up 18 ways). Names are normalized by removing punctuation and
 --      legal suffixes, then a short alias list maps known firms to one name.
 --   4. Personal fields (property owner name, applicant street address) are dropped.
 --      Analysis is done on permits, contractors, and neighborhoods, not individuals.
